@@ -5,25 +5,24 @@ This document defines the project governance for the [Debezium](https://github.c
 ## Overview
 
 Anyone can contribute to Debezium by following the [contribution workflow](https://github.com/debezium/debezium/CONTRIBUTE.md) or discussing features and improvements on GitHub issues.
+To become a committer in the Debezium project, start by making approved pull requests.
+After sufficient trust is built through with on Debezium, any current Debezium committer can nominate you to the steering committee for a committer role.
 
 ## Project Roles
 
 For governance purposes, there are two formal roles for the Debezium project.
 
-* **Steering Committee**: A committee composed of committers with the final authority over all decisions made on te project.
+* **Steering Committee**: A committee composed of committers with the final authority over all decisions made on the project.
 * **Committers**: A group of contributors with the right to merge pull requests into the Debezium repositories and publish releases.
 
-## Debezium Committers
+### Debezium Committers
 
 A Debezium committer is an individual who has been granted the right to merge pull requests into one of several Debezium GitHub repositories.
 A pull request requires a voting/review procedure, outlined below in the [Voting Rules and Procedures](#voting-rules-and-procedures) section prior to merging.
 
-To become a committer in the Debezium project, start by making approved pull requests.
-After sufficient trust is built through with on Debezium, any current Debezium committer can nominate you to the steering committee for a committer role.
-
 Debezium's committers are listed in the [COMMITTERS.yml](./committers.yml).
 
-## Steering Committee
+### Steering Committee
 
 The Debezium steering committee has the final authority over all decisions regarding the Debezium project, including:
 
@@ -35,10 +34,10 @@ Debezium's steering committee members are listed in the [COMMITTEE.yml](./commit
 
 ## Voting rules and procedures
 
-The Debezium project uses a voting system to guarantee no single member can dominate the project, and ensures continued success and diversity in the project's forward vision.
+The Debezium project uses a voting system to guarantee no single member or entity can dominate the project, and ensures continued success and diversity in the project's forward vision.
 
-The formal voting process involves the creation of a GitHub issue, pull request, or steering committee mailing list email thread.
-A vote is indicated by specifying `yes` or `no` on the issue, pull request, or mailing list thread.
+The formal voting process involves the creation of a GitHub issue or pull request.
+A vote is indicated by specifying `yes` or `no` on the issue or pull request, which can include the thumbs-up or thumbs-down emojis.
 After a defined period of time, votes are tallied, and the outcome is published.
 
 Debezium uses several voting mechanisms and procedures for various purposes.
@@ -61,6 +60,12 @@ Voting for pull requests can be done using a comment or approving the pull reque
 If the pull request author is a member of the Debezium steering committee, this counts as one of the two required votes.
 
 Pull requests that are small, low-risk, uncontroversial, or prefixed with `[ci]` or `[docs]` may freely be merged by any committer without any votes.
+Examples of uncontroversial changes may include:
+
+* Refactoring redundant code within a small number (2-5) of files that yields no behavior change.
+* Adding or changing logged output.
+* Adding or improving test suite code with no loss of test coverage.
+
 Whenever in doubt about the pull request's scope and risk, use the two positive vote requirement.
 
 ### Lazy consensus votes
@@ -87,17 +92,22 @@ The following describes the voting procedures for specific subject areas.
 ### Governance changes
 
 Except for the steering committee members marking themselves as Emeritus, all changes in the [governance](https://github.com/debezium/governance) repository require an explicit majority vote of steering committee members.
-These votes are held on the steering committee's mailing lists, and the outcome will be publicly published.
+These votes are held by the steering committee, and the outcome will be publicly published.
 
 ### Add/remove steering committee members
 
 Votes to add or remove steering committee members require an explicit majority vote of steering committee members.
-These votes are held on the steering committee's mailing list, and the outcome will be publicly published.
+These votes are held by the steering committee, and the outcome will be publicly published.
+
+If a steering committee member is absent for more than 6-months without any prior notification of absence, the committee member will be moved to Emeritus status automatically.
+
+For Emeritus committee members, their vote will not be tallied as part of the committee's vote as they've retired or chosen to take an extended leave.
+If an Emeritus committee member wishes to return as an active participant, they must first undergo an "add vote" like any other new committee member to be reinstated.
 
 ### Add/remove committers
 
 Votes to add or remove committers require an explicit majority vote of steering committee members.
-These votes are held on the steering committee's mailing list, and the outcome will be publicly published.
+These votes are held by the steering committee, and the outcome will be publicly published.
 
 ### Proposals
 
