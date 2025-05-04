@@ -1,0 +1,21 @@
+# Defines all active committers for the Debezium project.
+#
+# Each committer should be listed under the top-level 'committers' section, with entries that
+# adhere to the following format:
+#
+#   - name: <committer's preferred full name>
+#     github: <committer's GitHub account handle>
+#
+# Given that Debezium has community-led projects, there are separate committer teams to these
+# projects. To easily identify this use case, an optional field called 'note' can be added
+# to specify this information. For example:
+#
+#   - name: Mickey Mouse
+#     github: mmouse
+#     note: committer only for debezium-connector-minnie
+#
+# This file should be kept synchronized with the various Debezium organization committer teams
+# as this file serves as the record of truth about team changes.
+#
+#
+committers:

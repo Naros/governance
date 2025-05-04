@@ -1,26 +1,35 @@
 # Debezium Governance
 
-This document defines the project governance for the [Debezium](https://github.com/debezium) project.
+This document defines the project governance for the [Debezium](https://debezium.io) project.
 
 ## Overview
 
 Anyone can contribute to Debezium by following the [contribution workflow](https://github.com/debezium/debezium/CONTRIBUTE.md) or discussing features and improvements on GitHub issues.
 To become a committer in the Debezium project, start by making approved pull requests.
-After sufficient trust is built through with on Debezium, any current Debezium committer can nominate you to the steering committee for a committer role.
+After sufficient trust is built working on Debezium, any current Debezium committer can nominate you to the steering committee for a committer role.
 
 ## Project Roles
 
-For governance purposes, there are two formal roles for the Debezium project.
+For governance purposes, there are three formal roles for the Debezium project.
 
-* **Steering Committee**: A committee composed of committers with the final authority over all decisions made on the project.
+* **Contributor**: Any community member who is not yet a committer.
 * **Committers**: A group of contributors with the right to merge pull requests into the Debezium repositories and publish releases.
+* **Steering Committee**: A committee composed of committers with the final authority over all decisions made on the project.
+
+### Contributor
+
+Anyone who actively participates in the Debezium project is recognized as a contributor. 
+While this often includes individuals who submit code changes via pull requests, contributors also encompass those who engage in discussions on GitHub issues and pull requests.
+
+Contributors form the foundation of the Debezium community. 
+We welcome and encourage everyone to get involved in any way they can.
 
 ### Debezium Committers
 
 A Debezium committer is an individual who has been granted the right to merge pull requests into one of several Debezium GitHub repositories.
-A pull request requires a voting/review procedure, outlined below in the [Voting Rules and Procedures](#voting-rules-and-procedures) section prior to merging.
+A pull request requires a voting/review procedure prior to merging, outlined below in the [Pull Requests](#pull-requests) section.
 
-Debezium's committers are listed in the [COMMITTERS.yml](./committers.yml).
+Debezium's committers are listed in the [committers.yml](./committers.yml).
 
 ### Steering Committee
 
@@ -30,105 +39,121 @@ The Debezium steering committee has the final authority over all decisions regar
 * Who should become a committer or member of the steering committee.
 * Whether any changes are necessary to the project's governance or other assets in this repository.
 
-Debezium's steering committee members are listed in the [COMMITTEE.yml](./committee.yml).
+Debezium's steering committee members are listed in the [steering-committee.yml](./steering-committee.yml).
 
-## Voting rules and procedures
+## Pull Requests
+
+Pull requests against most repositories may be merged after receiving at least two positive committer or steering committee member votes.
+Voting for pull requests can be done by providing a comment, a thumbs-up, or using the pull request approval workflow.
+
+Pull requests that are small, low-risk, uncontroversial, or prefixed with `[ci]` or `[docs]` may be merged freely by anyone with commit privileges without a vote.
+Examples of such pull requests may include, but are not limited to:
+
+* Refactoring redundant code within a small number of files (2-5) that yields no behavior change.
+* Adding or changing logged output.
+* Adding or improving the test suite code with no loss of test coverage.
+* Updating an action used by the GitHub actions, which commits should be prefixed with `[ci]`
+* Fixing typos or very small clarifications to the documentation, which commits should be prefixed with `[docs]`
+
+**Whenever in doubt about a pull request's scope or risk, fallback to the two positive vote requirement.**
+
+The following repositories use a separate workflow and are excluded from this workflow:
+
+* https://github.com/debezium/debezium-design-documents, see the [Proposals](#proposals) section.
+* https://github.com/debezium/governance, see the [Project Governance Changes](#project-governance-changes) section.
+
+## Proposals
+
+Proposals, often referred to as _Debezium Design Documents_, are used to define changes to the Debezium project that could significantly impact its users or the project's direction.
+Opening a proposal provides an opportunity for maintainers to review a concept before coding begins.
+A proposal can be opened in the [Debezium Design Documents](https://github.com/debezium/debezium-design-documents) repository by creating a pull request.
+
+Proposals require [lazy consensus voting](#lazy-consensus-voting), a procedure where steering committee members cast binding votes.
+Any non-steering committee member may freely cast non-binding votes.
+Non-binding votes are highly encouraged as they provide an indication to the proposals broader acceptance in the Debezium community.
+
+Votes can be expressed by approving the pull request or specifying `+1` (thumbs-up emoji) on the original comment of the pull request.
+Any other votes or positions can be expressed in a separate comment on the proposal.
+
+**If you wish to express a disapproval with a `-1` (thumbs-down emoji), a reason must be given for the vote to be valid.**
+
+## Project Governance changes
+
+The [Debezium governance](https://github.com/debezium/governance.git) repository outlines the project's governance, code of conduct, along with a record of changes to steering committee and committer roles.
+
+Any change in this repository requires an [explicit majority vote](#explicit-majority-voting) except for when a steering committee member marks themselves as Emeritus, which indicates they're transitioning to an inactive status.
+The vote is held by the steering committee where each non-Emeritus committee member can cast a binding vote and there are no non-binding votes. 
+
+The outcome of the vote will be made publicly available after the vote has concluded.
+
+## Add/remove committers
+
+The process to add or remove someone as a committer requires an [explicit majority vote](#explicit-majority-voting).
+The vote is held by the steering committee, where each non-Emeritus committee member can cast a binding vote.
+
+The outcome of the vote will be made publicly available, the [committers.yml](./committers.yml) file updated, and GitHub teams adjusted accordingly after the vote ends.
+
+## Add/remove steering committee members
+
+The process to add or remove someone as a steering committee member requires an [explicit majority vote](#explicit-majority-voting).
+The vote is held by the steering committee, where each non-Emeritus committee member can cast a binding vote.
+
+The outcome of the vote will be made publicly available, the [steering-committee.yml](./steering-committee.yml) file updated, and GitHub teams adjusted accordingly after the vote ends.
+
+### Extended absence
+
+If a steering committee member is absent for more than 6-months, the committee will contact the member directly via email.
+If there is no response from the committee member after a 1-month period, the committee member will be moved to Emeritus status by updating the [steering-committee.yml](./steering-committee.yml) accordingly.
+
+### Moving from Emeritus to active member
+
+If an Emeritus committee member wishes to return to active status, this change requires an [explicit majority vote](#explicit-majority-voting), as if we're adding a new committee member.
+If the Emeritus committee member is reinstated, the [steering-committee.yml](./steering-committee.yml) should be updated to reflect the change in Emeritus status.
+
+### Other changes
+
+Unless already specified in herein, all other changes to the project require an [explicit majority vote](#explicit-majority-voting) of steering committee members.
+Additionally, any committee member, at any time, may request that any change require an explicit majority vote by the steering committee.
+
+## Voting strategies
 
 The Debezium project uses a voting system to guarantee no single member or entity can dominate the project, and ensures continued success and diversity in the project's forward vision.
 
 The formal voting process involves the creation of a GitHub issue or pull request.
-A vote is indicated by specifying `yes` or `no` on the issue or pull request, which can include the thumbs-up or thumbs-down emojis.
+A vote is indicated by specifying `yes` or `no` on the issue or pull request, which can include the thumbs-up or thumbs-down emojis, or the use of the GitHub approval workflow.
 After a defined period of time, votes are tallied, and the outcome is published.
 
-Debezium uses several voting mechanisms and procedures for various purposes.
+Debezium uses several different strategies to handle voting, shown here:
 
-* [Pull request approvals](#pull-request-approvals)
-* [Lazy consensus votes](#lazy-consensus-votes)
-* [Explicit majority votes](#explicit-majority-votes)
+* [Lazy consensus voting](#lazy-consensus-voting)
+* [Explicit majority voting](#explicit-majority-voting)
 
-Debezium also relies on the notion of **binding** and **non-binding** votes.
+Each of these strategies rely on two types of votes: 
 
-A **binding vote** is one cast by specific individuals with given roles based on the voting procedure, who's vote is used to calculate the outcome.
-A **non-binding vote** is one cast by individuals who do not have binding vote roles, and these votes do not count toward the outcome, but are used to guide those with binding votes to a resolution that best fits all involved.
+* **Binding**: a vote from a member with specific roles used to tally the outcome of the vote. The determination of what roles are considered for binding votes is based on the subject area of the vote, such as a project proposal or governance changes as examples. 
+* **Non-Binding**: any other vote cast by individuals who do not meet the binding vote requirements. While these votes do not count toward the outcome tally, they are heavily relied upon to guide those with binding-vote rights to the outcome that beset fits all involved. The use of non-binding votes, where applicable, is highly encouraged. 
 
-The following describes for each procedure, those who may vote, how the votes are recorded, and duration of the vote.
+### Lazy consensus voting
 
-### Pull request approvals
+A lazy consensus vote uses **+1**, **0**, or **-1** to indicate one's position on a topic.
 
-Pull requests against most repositories may be merged after receiving at least two positive committer votes.
-Voting for pull requests can be done using a comment or approving the pull request on GitHub.
-If the pull request author is a member of the Debezium steering committee, this counts as one of the two required votes.
-
-Pull requests that are small, low-risk, uncontroversial, or prefixed with `[ci]` or `[docs]` may freely be merged by any committer without any votes.
-Examples of uncontroversial changes may include:
-
-* Refactoring redundant code within a small number (2-5) of files that yields no behavior change.
-* Adding or changing logged output.
-* Adding or improving test suite code with no loss of test coverage.
-
-Whenever in doubt about the pull request's scope and risk, use the two positive vote requirement.
-
-### Lazy consensus votes
-
-Lazy consensus votes use the **+1**, **0**, or **-1** votes where:
-
-* `+1` indicates **yes** or the **affirmative**
-* `-1` indicates **no** or the **negative**
+* `+1` indicates you approve
+* `-1` indicates you disapprove 
 * `0` indicates you have no specific opinion
 
 The voting process concludes when there are at least three `+1` binding votes, and no `-1` binding votes.
-The vote should be open for at least **TBD** days to allow everyone to participate.
+The vote should be open for at least **3** days to allow everyone to participate.
 
-### Explicit majority votes
+### Explicit majority voting
 
-An explicit majority vote is simply a `+1` or `-1` based vote.
+An explicit majority vote uses **+1** or **-1** to indicate one's position on a topic.
+
+* `+1` indicates you approve
+* `-1` indicates you disapprove
+* If you have no opinion, you should abstain from voting
+
 The vote succeeds when at least **three binding** votes are cast, and two-thirds of cast binding values are `+1`.
-The vote should be open for at least **TBD** days to allow everyone to participate.
-
-## Voting for specific subject areas
-
-The following describes the voting procedures for specific subject areas.
-
-### Governance changes
-
-Except for the steering committee members marking themselves as Emeritus, all changes in the [governance](https://github.com/debezium/governance) repository require an explicit majority vote of steering committee members.
-These votes are held by the steering committee, and the outcome will be publicly published.
-
-### Add/remove steering committee members
-
-Votes to add or remove steering committee members require an explicit majority vote of steering committee members.
-These votes are held by the steering committee, and the outcome will be publicly published.
-
-If a steering committee member is absent for more than 6-months without any prior notification of absence, the committee member will be moved to Emeritus status automatically.
-
-For Emeritus committee members, their vote will not be tallied as part of the committee's vote as they've retired or chosen to take an extended leave.
-If an Emeritus committee member wishes to return as an active participant, they must first undergo an "add vote" like any other new committee member to be reinstated.
-
-### Add/remove committers
-
-Votes to add or remove committers require an explicit majority vote of steering committee members.
-These votes are held by the steering committee, and the outcome will be publicly published.
-
-### Proposals
-
-Proposals can be opened in the [Debezium Design Documents](https://github.com/debezium/debezium-design-documents) repository.
-Proposals should cover any changes to the Debezium project that might significantly impact its users or the project's direction.
-
-Proposals require a lazy consensus approval of steering committee members; however, non-binding votes are highly encouraged to signal to the committee the proposals acceptance to the broader Debezium community.
-
-Votes can be expressed by approving the pull request or specifying `+1` in a comment.
-Other votes, with reasons, can be expressed in a comment.
-
-**Specifying a `-1` vote must specify a reason.**
-
-### Pull requests in non-governance & proposal repositories
-
-Votes on pull requests not in the [governance](https://github.com/debezium/governance) or [Debezium Design Documents](https://github.com/debezium/debezium-design-documents) repositories will use the pull request vote strategy.
-
-### Other changes
-
-Unless already specified in herein, all other changes to the project require an explicit majority of steering committee members.
-Additionally, any committee member, at any time, may request that any change require an explicit majority of steering committee votes.
+The vote should be open for at least **3** days to allow everyone to participate.
 
 ## Code of Conduct
 
