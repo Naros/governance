@@ -5,5 +5,5 @@ For the complete Code of Conduct, see the [Commonhaus Foundation Code of Conduct
 
 ## Debezium Contact Information
 
-* To report an issue, Code of Conduct reports should be sent to `report@DEBEZIUM-mailing-list`. We will follow [CF CoC procedures](https://www.commonhaus.org/policies/code-of-conduct/#handling-reports-and-escalations) when handling Code of Conduct reports.
+* To report an issue, Code of Conduct reports should be sent to `project-debezium@commonhaus.org`. We will follow [CF CoC procedures](https://www.commonhaus.org/policies/code-of-conduct/#handling-reports-and-escalations) when handling Code of Conduct reports.
 * To [escalate an issue](https://www.commonhaus.org/policies/code-of-conduct/#escalate-an-issue), reports should be sent to the `coc-escalation@commonhaus.org` mailing list for review by the  [Code of Conduct Panel (COCP)](https://www.commonhaus.org/policies/code-of-conduct/#code-of-conduct-panel).
