@@ -19,3 +19,113 @@
 #
 #
 committers:
+  - name: Jiri Pechanec
+    github: jpechane
+  - name: Chris Cranford
+    github: naros
+  - name: Mario Fiore Vitale
+    github: mfvitale
+  - name: Jakub Cechacek
+    github: jcechace
+  - name: Gunnar Morling
+    github: gunnarmorling
+  - name: Matthias Wessendorf
+    github: matzew
+  - name: Emmanuel Bernard
+    github: emmanuelbernard
+  - name: Vojtěch Juránek
+    github: vjuranek
+  - name: René Kerner
+    github: rk3rn3r
+  - name: Mark Drilling
+    github: mdrillin
+  - name: Ashique Ansari
+    github: uidoyen
+  - name: Indra Shukla
+    github: indraraj
+  - name: Giovanni Panice
+    github: kmos
+  - name: Martin Medek
+    github: MartinMedek
+  - name: Bob Roldan
+    github: roldanbob
+  - name: Ondrej Babec
+    github: obabec
+  - name: Anisha Mohanty
+    github: ani-sha
+  - name: Alvar Viana Gomez
+    github: AlvarVG
+  - name: Jiří Novotný
+    github: novotnyjiri
+  - name: Chris Riccomini
+    github: criccomini
+    note: committer for debezium-connector-cassandra
+  - name: Štefan Miklošovič
+    github: smiklosovic
+    note: committer for debezium-connector-cassandra
+  - name: Becky ZHou
+    github: ewljmgzbyydh123
+    note: committer for debezium-connector-cassandra
+  - name: Xiao Fu
+    github: fuxiao224
+    note: committer for debezium-connector-cassandra
+  - name: Virag Tripathi
+    github: viragtripathi
+    note: committer for debezium-connector-cockroachdb
+  - name: Peter Urbanetz
+    github: zrlurb
+    note: committer for debezium-connector-db2
+  - name: SeanRooooney
+    github: SeanRooooney
+    note: committer for debezium-connector-db2
+  - name: Luis Garcés-Erice
+    github: lga-zurich
+    note: committer for debezium-connector-db2
+  - name: Martin Sillence
+    github: msillence
+    note: committer for debezium-connector-ibmi
+  - name: Lars M Johanssson
+    github: nrkljo
+    note: committer for debezium-connector-informix
+  - name: Emil Lindström
+    github: nrkeli
+    note: committer for debezium-connector-informix
+  - name: martinmaxinen
+    github: martinmaxinen
+    note: committer for debezium-connector-informix
+  - name: mansanv
+    github: mansanv
+    note: committer for debezium-connector-informix
+  - name: Nancy Xu
+    github: nancyxu123
+    note: committer for debezium-connector-spanner
+  - name: Tony Joseph
+    github: imtj1
+    note: committer for debezium-connector-spanner
+  - name: Shuran Zhang
+    github: ShuranZhang
+    note: committer for debezium-connector-spanner
+  - name: Jeff CHao
+    github: jeffchao
+    note: committer for debezium-connector-vitess
+  - name: Kewei Shang
+    github: keweishang
+    note: committer for debezium-connector-vitess
+  - name: Shichao An
+    github: shichao-an
+    note: committer for debezium-connector-vitess
+  - name: Yang
+    github: 5antelope
+    note: committer for debezium-connector-vitess
+  - name: Ruslan Gibaiev
+    github: rgibaiev
+    note: committer for debezium-connector-vitess
+  - name: Suranjan Kumar
+    github: suranjan
+    note: committer for debezium-connector-yugabytedb
+  - name: Vaibhav Kushwaha
+    github: vaibhav-yb
+    note: committer for debezium-connector-yugabytedb
+  - name: rknsai-yb
+    github: rknsai-yb
+    note: committer for debezium-connector-yugabytedb
