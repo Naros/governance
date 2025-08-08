@@ -18,3 +18,14 @@
 #
 #
 members:
+  - name: Jiri Pechanec
+    github: jpechane
+    organization: IBM
+  - name: Chris Cranford
+    github: naros
+    organization: IBM
+  - name: Gunnar Morling
+    github: gunnarmorling
+    organization: Confluent
+  - name: Jakub Cechacek
+    github: jcechace
