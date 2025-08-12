@@ -1,0 +1,31 @@
+# Defines all active and emeritus steering committee members for the Debezium project.
+#
+# Each member should be listed under the top-level 'members' section, with entries that
+# adhere to the following format:
+#
+#   - name: <member's preferred full name>
+#     github: <member's GitHub account handle>
+#     organization: <member's current employer>
+#
+# The employer information is required to provide foundation-specific annual reports to the
+# Foundation. Should a member of the committee change employers, it's important that the
+# information within this file is updated to reflect those changes.
+#
+# In addition, any member that is considered to have Emeritus status, an optional field
+# should be added each the end of the entry as follows:
+#
+#     emeritus: true
+#
+#
+members:
+  - name: Jiri Pechanec
+    github: jpechane
+    organization: IBM
+  - name: Chris Cranford
+    github: naros
+    organization: IBM
+  - name: Gunnar Morling
+    github: gunnarmorling
+    organization: Confluent
+  - name: Jakub Cechacek
+    github: jcechace
